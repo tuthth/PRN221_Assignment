@@ -1,0 +1,15 @@
+﻿<Window x:Class="PRN221_Assignment1_WPF.CustomerWPF"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PRN221_Assignment1_WPF"
+        mc:Ignorable="d"
+        Title="CustomerWPF" Height="450" Width="800">
+    <Grid>
+        <Label x:Name="lbCustomer" Content="CUSTOMER MANAGER" HorizontalAlignment="Center" Margin="0,50,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnManageProfile" Content="Manage profile" HorizontalAlignment="Left" Margin="193,157,0,0" VerticalAlignment="Top" Height="74" Width="129" Click="btnManageProfile_Click"/>
+        <Button x:Name="btnTransaction" Content="View transaction" HorizontalAlignment="Left" Margin="495,157,0,0" VerticalAlignment="Top" Height="74" Width="129" Click="btnTransaction_Click"/>
+
+    </Grid>
+</Window>

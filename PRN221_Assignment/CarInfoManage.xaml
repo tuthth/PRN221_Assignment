@@ -1,0 +1,39 @@
+﻿<Window x:Class="PRN221_Assignment1_WPF.CarInfoManage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PRN221_Assignment1_WPF"
+        mc:Ignorable="d"
+        Loaded="Window_Loaded"
+        Title="CarInfoManage" Height="1000" Width="1200" MinHeight="1000" MinWidth="1200" MaxHeight="1000" MaxWidth="1200">
+    <Grid>
+        <Label x:Name="lbID" Content="ID" HorizontalAlignment="Left" Margin="66,96,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lbName" Content="Name" HorizontalAlignment="Left" Margin="66,156,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lbDescription" Content="Description" HorizontalAlignment="Left" Margin="66,216,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.079,0.117"/>
+        <ComboBox x:Name="cboIDs" HorizontalAlignment="Left" Margin="148,98,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="cboIDs_SelectionChanged"/>
+        <TextBox x:Name="txtName" HorizontalAlignment="Left" Margin="148,160,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtDescription" HorizontalAlignment="Left" Margin="148,220,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="lbNoOfDoors" Content="No. of doors" HorizontalAlignment="Left" Margin="354,96,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lbSeatCapacity" Content="SeatCapacity" HorizontalAlignment="Left" Margin="354,156,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lbFuelType" Content="Fuel type" HorizontalAlignment="Left" Margin="354,216,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.079,0.117"/>
+        <TextBox x:Name="txtSeatCapacity" HorizontalAlignment="Left" Margin="436,160,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtFuelType" HorizontalAlignment="Left" Margin="436,220,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtNoOfDoors" HorizontalAlignment="Left" Margin="436,102,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="lbYear" Content="Year" HorizontalAlignment="Left" Margin="616,96,0,0" VerticalAlignment="Top"/>
+        <Label Content="ManufactureID" HorizontalAlignment="Left" Margin="616,156,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lbSupplierID" Content="SupplierID" HorizontalAlignment="Left" Margin="616,216,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.079,0.117"/>
+        <TextBox x:Name="txtManufacturerID" HorizontalAlignment="Left" Margin="713,160,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtSupplierID" HorizontalAlignment="Left" Margin="713,220,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtYear" HorizontalAlignment="Left" Margin="713,102,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="lbStatus" Content="Status" HorizontalAlignment="Left" Margin="896,96,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lbRentPerDay" Content="Rent per day" HorizontalAlignment="Left" Margin="896,156,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtRentPerDay" HorizontalAlignment="Left" Margin="978,160,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtStatus" HorizontalAlignment="Left" Margin="978,102,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnUpdate" Content="Update" HorizontalAlignment="Left" Margin="904,216,0,0" VerticalAlignment="Top" Height="26" Width="62" Click="btnUpdate_Click"/>
+        <Button x:Name="btnDelete" Content="Delete" HorizontalAlignment="Left" Margin="1036,216,0,0" VerticalAlignment="Top" Height="26" Width="62" Click="btnDelete_Click"/>
+        <DataGrid x:Name="dgvCarInfors" HorizontalAlignment="Center" Height="670" Margin="0,304,0,0" VerticalAlignment="Top" Width="1200" d:ItemsSource="{d:SampleData ItemCount=5}" SelectionChanged="dgvCarInfors_SelectionChanged"/>
+        <Button x:Name="btnCreate" Content="Create" HorizontalAlignment="Left" Margin="904,260,0,0" VerticalAlignment="Top" Height="26" Width="62" Click="btnCreate_Click"/>
+
+    </Grid>
+</Window>

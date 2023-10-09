@@ -1,0 +1,51 @@
+﻿<Window x:Class="PRN221_Assignment1_WPF.CarInfoCreate"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PRN221_Assignment1_WPF"
+        mc:Ignorable="d"
+        Title="CarInfoCreate" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Margin="10">
+            <!-- Add labels and input fields for car information -->
+            <TextBlock>Name:</TextBlock>
+            <TextBox x:Name="txtCarName"/>
+
+            <TextBlock>Car Description:</TextBlock>
+            <TextBox x:Name="txtCarDescription"/>
+
+            <TextBlock>Number of Doors:</TextBlock>
+            <TextBox x:Name="txtNumberOfDoors"/>
+
+            <TextBlock>Seating Capacity:</TextBlock>
+            <TextBox x:Name="txtSeatingCapacity"/>
+
+            <TextBlock>Fuel Type:</TextBlock>
+            <TextBox x:Name="txtFuelType"/>
+
+            <TextBlock>Year:</TextBlock>
+            <TextBox x:Name="txtYear"/>
+
+            <TextBlock>Manufacturer ID:</TextBlock>
+            <TextBox x:Name="txtManufacturerId"/>
+
+            <TextBlock>Supplier ID:</TextBlock>
+            <TextBox x:Name="txtSupplierId"/>
+
+            <TextBlock>Car Status:</TextBlock>
+            <TextBox x:Name="txtCarStatus"/>
+
+            <TextBlock>Renting Price Per Day:</TextBlock>
+            <TextBox x:Name="txtRentingPricePerDay"/>
+
+
+        </StackPanel>
+        <Button x:Name="btnCreate" Content="Create" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" Width="389" Click="btnCreate_Click"/>
+    </Grid>
+</Window>

@@ -1,0 +1,34 @@
+﻿<Window x:Class="PRN221_Assignment1_WPF.CreateCustomer"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PRN221_Assignment1_WPF"
+        mc:Ignorable="d"
+        Title="CreateCustomer" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Margin="10">
+            <TextBlock>Customer Name:</TextBlock>
+            <TextBox x:Name="txtCustomerName"/>
+
+            <TextBlock>Telephone:</TextBlock>
+            <TextBox x:Name="txtTelephone"/>
+
+            <TextBlock>Email:</TextBlock>
+            <TextBox x:Name="txtEmail"/>
+
+            <TextBlock>Birthday:</TextBlock>
+            <DatePicker x:Name="dpCustomerBirthday"/>
+
+            <TextBlock>Password:</TextBlock>
+            <PasswordBox x:Name="pwdPassword"/>
+
+            <Button Content="Create" Click="btnCreate_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

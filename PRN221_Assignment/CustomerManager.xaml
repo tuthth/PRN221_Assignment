@@ -1,0 +1,29 @@
+﻿<Window x:Class="PRN221_Assignment1_WPF.CustomerManager"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PRN221_Assignment1_WPF"
+        mc:Ignorable="d"
+        Loaded="Window_Loaded"
+        Title="CustomerManager" Height="450" Width="800" MaxHeight="550" MaxWidth="1000" MinHeight="450" MinWidth="800">
+    <Grid Margin="0,0,0,15">
+        <Label x:Name="lbID" Content="ID" HorizontalAlignment="Left" Margin="54,49,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.462,0.837"/>
+        <Label x:Name="lbName" Content="Name" HorizontalAlignment="Left" Margin="54,105,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.11,0.579"/>
+        <Label x:Name="lbTelephone" Content="Telephone" HorizontalAlignment="Left" Margin="54,172,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtName" HorizontalAlignment="Left" Margin="137,109,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="190"/>
+        <TextBox x:Name="txtTelephone" HorizontalAlignment="Left" Margin="137,176,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="190"/>
+        <Label x:Name="lbEmail" Content="Email" HorizontalAlignment="Left" Margin="457,49,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.008,-0.912"/>
+        <Label x:Name="lbBirthday" Content="Birthday" HorizontalAlignment="Left" Margin="457,105,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.721,-0.601"/>
+        <Label x:Name="lbStatus" Content="Status" HorizontalAlignment="Left" Margin="457,172,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Margin="561,53,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="190"/>
+        <TextBox x:Name="txtStatus" HorizontalAlignment="Left" Margin="561,176,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="190"/>
+        <DatePicker x:Name="dtpBirthday" HorizontalAlignment="Left" Margin="561,106,0,0" VerticalAlignment="Top" Width="190"/>
+        <DataGrid x:Name="dgvCustomerList" HorizontalAlignment="Center" Margin="0,237,0,-25" Width="800" d:ItemsSource="{d:SampleData ItemCount=5}"/>
+        <ComboBox x:Name="cboCustomerID" HorizontalAlignment="Left" Margin="137,51,0,0" VerticalAlignment="Top" Width="190" SelectionChanged="cboCustomerID_SelectionChanged"/>
+        <Button x:Name="btnUpdate" Content="Update" HorizontalAlignment="Left" Margin="263,210,0,0" VerticalAlignment="Top" Width="64" Click="btnUpdate_Click"/>
+        <Button x:Name="btnCreate" Content="Create" HorizontalAlignment="Center" Margin="0,210,0,0" VerticalAlignment="Top" Width="64" Click="btnCreate_Click"/>
+        <Button x:Name="btnDelete" Content="Delete" HorizontalAlignment="Left" Margin="476,210,0,0" VerticalAlignment="Top" Width="62" Click="btnDelete_Click"/>
+
+    </Grid>
+</Window>
