@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusinessValidation", "Busin
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarRental", "CarRental\CarRental.csproj", "{4575E9EA-56FB-44C0-9DB7-D4D1B0E444EB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PRN221_Assignment_Razor", "PRN221_Assignment_Razor\PRN221_Assignment_Razor.csproj", "{38C766A0-A542-4E0A-BC13-0D155B877420}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PRN221_Assignment_Razor", "PRN221_Assignment_Razor\PRN221_Assignment_Razor.csproj", "{38C766A0-A542-4E0A-BC13-0D155B877420}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

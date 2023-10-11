@@ -1,0 +1,36 @@
+﻿@page
+@model PRN221_Assignment_Razor.Pages.CreateCustomerModel
+@{
+}
+<h2>Create New Customer</h2>
+
+<form method="post">
+
+    <div class="form-group">
+        <label>Name:</label>
+        <input asp-for="Name" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label>Phone:</label>
+        <input asp-for="Phone" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label>Email:</label>
+        <input asp-for="Email" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label>Birthday:</label>
+        <input asp-for="Birthday" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label>Password:</label>
+        <input asp-for="Password" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Create</button>
+
+</form>

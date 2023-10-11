@@ -1,0 +1,71 @@
+﻿@page
+@model PRN221_Assignment_Razor.Pages.RentingManageModel
+@{
+}
+<h2>Renting Management</h2>
+
+<a asp-page="/CreateRenting" class="btn btn-primary">Create New Renting</a> 
+
+<form asp-page="/DeleteRenting" method="post">
+  <button type="submit" class="btn btn-danger">Delete Renting</button>
+</form>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Transaction Id</th>
+      <th>Customer Id</th> 
+      <th>Renting Date</th>
+      <th>Renting Status</th>
+      <th>Total Price</th>
+    </tr>
+  </thead>
+
+  
+@foreach(var transaction in Model.Transactions)
+{
+<tr>     
+<td>@transaction.RentingTransationId
+</td>
+<td>@transaction.CustomerId
+</td>
+<td>@transaction.RentingDate
+</td>
+<td>@transaction.RentingStatus
+</td>      
+<td>@transaction.TotalPrice
+</td>
+</tr>
+}
+</table>
+
+<table class="table">
+  <thead>
+    <tr>
+     <th>Detail Id</th>
+     <th>Car Id</th>
+     <th>Start date</th>
+     <th>End date</th>
+     <th>Price</th>
+    </tr>
+  </thead>
+
+  
+@foreach(var detail in Model.Details)
+{
+<tr>
+<td>@detail.RentingTransactionId
+</td>    
+<td>@detail.CarId
+</td>      
+<td>@detail.StartDate
+</td>    
+<td>@detail.EndDate
+</td>      
+<td>@detail.Price
+</td>
+</tr>
+
+}
+
+</table>

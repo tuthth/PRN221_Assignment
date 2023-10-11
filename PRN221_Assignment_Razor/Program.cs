@@ -1,3 +1,5 @@
+using DAL.Repo;
+
 namespace PRN221_Assignment_Razor
 {
     public class Program
@@ -8,6 +10,13 @@ namespace PRN221_Assignment_Razor
 
             // Add services to the container.
             builder.Services.AddRazorPages();
+            builder.Services.AddScoped<CustomerRepo>();
+            builder.Services.AddSession(options =>
+            {
+                options.IdleTimeout = TimeSpan.FromMinutes(20);
+                options.Cookie.HttpOnly = true;
+                options.Cookie.IsEssential = true;
+            });
 
             var app = builder.Build();
 

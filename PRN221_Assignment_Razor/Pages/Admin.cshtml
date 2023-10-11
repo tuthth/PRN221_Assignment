@@ -1,0 +1,20 @@
+﻿@page
+@model PRN221_Assignment_Razor.Pages.AdminModel
+@{
+}
+
+<h1 class="text-center">ADMIN PAGE</h1>
+
+@if (!string.IsNullOrEmpty(Model.AdminMessage))
+{
+    <div class="alert alert-success">
+        <p>@Model.AdminMessage</p>
+    </div>
+}
+
+<div class="text-center">
+    <a asp-page="./CustomerManager" class="btn btn-primary m-2">Manage Customer</a>
+    <a asp-page="./CarInfoManage" class="btn btn-primary m-2">Manage Car Information</a>
+    <a asp-page="./RentingManage" class="btn btn-primary m-2">Manage Renting</a>
+    <a asp-page="./GenerateReport" class="btn btn-primary m-2">Generate Report</a>
+</div>
